@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class MarcianoScript : MonoBehaviour {
+    [SerializeField] LayerMask floorLayer;
     [SerializeField] Transform posPies;
     [SerializeField] Text txtPuntuacion;
     [SerializeField] float speed = 5;
@@ -13,30 +14,25 @@ public class MarcianoScript : MonoBehaviour {
     [SerializeField] int puntos = 0;
     [SerializeField] float radioOverlap = 0.1f;
     Rigidbody2D rb2D;
+    bool saltando = false;
     
     private void Start() {
         rb2D = GetComponent<Rigidbody2D>();
         txtPuntuacion.text = "Score:" + puntos.ToString();
     }
 
-    private bool EstaEnElSuelo() {
-        bool enSuelo = false;
-        Collider2D[] cols = Physics2D.OverlapCircleAll(posPies.position, radioOverlap);
-        for (int i = 0; i < cols.Length; i++) {
-            if (cols[i].gameObject.tag == "Suelo") {
-                enSuelo = true;
-                break;
-            }
+    private void Update() {
+        if (Input.GetKey(KeyCode.Space)) {
+            saltando = true;
         }
-        return enSuelo;
     }
 
     void FixedUpdate () {
         float xPos = Input.GetAxis("Horizontal");
-        float yPos = Input.GetAxis("Vertical");
         float ySpeedActual = rb2D.velocity.y;
 
-        if(yPos>0) {
+        if(saltando) {
+            saltando = false;
             if (EstaEnElSuelo()) {
                 rb2D.velocity = new Vector2(xPos * speed, jumpForce);
             } else {
@@ -58,4 +54,28 @@ public class MarcianoScript : MonoBehaviour {
             Destroy(collision.gameObject);
         }
     }
+
+    private bool EstaEnElSuelo() {
+        bool enSuelo = false;
+        Collider2D colider = Physics2D.OverlapCircle(posPies.position, radioOverlap, floorLayer);
+        if (colider != null) {
+            enSuelo = true;
+        }
+        return enSuelo;
+    }
+
+    /*
+    //Version basada en TAG y utilizando OverlapCircleAll
+    private bool EstaEnElSuelo() {
+        bool enSuelo = false;
+        Collider2D[] cols = Physics2D.OverlapCircleAll(posPies.position, radioOverlap);
+        for (int i = 0; i < cols.Length; i++) {
+            if (cols[i].gameObject.tag == "Suelo") {
+                enSuelo = true;
+                break;
+            }
+        }
+        return enSuelo;
+    }
+    */
 }
