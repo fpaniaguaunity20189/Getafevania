@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: AtlasJuego
+  m_EditorData:
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 1
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingParameters:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: df5486e44107bc74baffb6fa7552b657, type: 3}
+    - {fileID: 102900000, guid: 2311d06c93cc6414bbf3277038dd8a93, type: 3}
+    - {fileID: 102900000, guid: 2a3fb55342f4fac4b8ce2182cd7a749d, type: 3}
+    - {fileID: 2800000, guid: 9f82f84fc650abd47ba37a40bfd654bd, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 9f82f84fc650abd47ba37a40bfd654bd, type: 3}
+  - {fileID: 21300000, guid: 8bcfa680b8488974b913ebf9784ee44c, type: 3}
+  - {fileID: 21300000, guid: b61db6f2ff26f4e4d87fd786c55e2e87, type: 3}
+  - {fileID: 21300000, guid: f8510bb17fa362d4fac77e65dfc51f7f, type: 3}
+  - {fileID: 21300000, guid: 87dc2bf45893ed141ba8b99154e3a462, type: 3}
+  - {fileID: 21300000, guid: 8030dd76d7c83fe418db24ac478c9f4b, type: 3}
+  - {fileID: 21300000, guid: 238857df0561e474f995272208b40623, type: 3}
+  - {fileID: 21300000, guid: 7435e7692bb00fd429e729bc07eba912, type: 3}
+  - {fileID: 21300000, guid: 319d951ad601e3d47ad41445b0678e9b, type: 3}
+  - {fileID: 21300000, guid: 87958ee6ececc0940b81c3dab3092422, type: 3}
+  - {fileID: 21300000, guid: 92ab95f5d42d5d34b96e7b15d2ddaab1, type: 3}
+  - {fileID: 21300000, guid: 5afd58141cfbec74ca4944f65526df31, type: 3}
+  - {fileID: 21300000, guid: 4948ec78a235043419dd07cffecc74ab, type: 3}
+  - {fileID: 21300000, guid: 3db784fe42836a14a892e451bacc436a, type: 3}
+  - {fileID: 21300000, guid: e9755dd0e87e1fd468d45242bf77b073, type: 3}
+  - {fileID: 21300000, guid: e1377d517f90e3c4e8c5523daeda88b3, type: 3}
+  - {fileID: 21300000, guid: a84448b1f74945e4d891a56a7b1d4c4d, type: 3}
+  - {fileID: 21300000, guid: 5030daf15405f394c9e017a320280d11, type: 3}
+  - {fileID: 21300000, guid: de1c74c43bbdd7f4f803b69defd7c1e1, type: 3}
+  - {fileID: 21300000, guid: 9f975885136b49b4785710cbee6ed92a, type: 3}
+  - {fileID: 21300000, guid: 512beea5ac2e0c94a943f7e5ee154444, type: 3}
+  - {fileID: 21300000, guid: 887509e50a6496946a9af7694fb14340, type: 3}
+  - {fileID: 21300000, guid: 6e9762f5cf9c4c64d9d8cc96d7fc24da, type: 3}
+  - {fileID: 21300000, guid: a089ee063654ca646b7193f9b7ba9055, type: 3}
+  - {fileID: 21300000, guid: 953251964957c5142a9903755b93806c, type: 3}
+  - {fileID: 21300000, guid: 03ba94773a9f7e54ca23396c156c5660, type: 3}
+  - {fileID: 21300000, guid: ad596c182dc4e6a45a41ce3be7969c63, type: 3}
+  - {fileID: 21300000, guid: 210aae2832f90304e914b9dcc442b661, type: 3}
+  - {fileID: 21300000, guid: 881045b8080114f4db284707898c57bc, type: 3}
+  - {fileID: 21300000, guid: e0142d3966b179340b17014b7d6e3286, type: 3}
+  - {fileID: 21300000, guid: 6c06d0896ad8b4a4d9affb7fa0a12389, type: 3}
+  - {fileID: 21300000, guid: bb23ebd96577ee64eb7c83761c94659f, type: 3}
+  - {fileID: 21300000, guid: 075bec3a390cc56418cdcfd72f4c551b, type: 3}
+  - {fileID: 21300000, guid: 7e3f885beed3c7f4c8d01cd88c27c102, type: 3}
+  - {fileID: 21300000, guid: eab8784c47395354d8f96898008e1f8b, type: 3}
+  - {fileID: 21300000, guid: 209886ec186c13d4095b5693c03bd612, type: 3}
+  - {fileID: 21300000, guid: 65078bae22629be4fa50fa43fb3377f8, type: 3}
+  - {fileID: 21300000, guid: 1fc6fadf2d14083418d1e884d2c6ef67, type: 3}
+  - {fileID: 21300000, guid: 2a1ac1c0e7c17fe4f8b449b2c8bbf66e, type: 3}
+  - {fileID: 21300000, guid: c0d40a2cf87fbb249b57aa20fa8eed43, type: 3}
+  - {fileID: 21300000, guid: 03f5cf4dde94a0b46b7bb66bb88115f2, type: 3}
+  - {fileID: 21300000, guid: c8b419cf2ca82324fbccfeadf35bb542, type: 3}
+  - {fileID: 21300000, guid: 9928be10295617c4dbba8d9bd69d9b09, type: 3}
+  - {fileID: 21300000, guid: 2f4879f1f6bffd54da1e1a1eedb18bbb, type: 3}
+  - {fileID: 21300000, guid: a93ab61efdec9b2429e54a0d4f0a4925, type: 3}
+  - {fileID: 21300000, guid: be4339a58aaa98f4d85078132b579afa, type: 3}
+  - {fileID: 21300000, guid: c9d40f62111d8554483c2ae849385f76, type: 3}
+  - {fileID: 21300000, guid: e2c325dcc4b231947a6bd722def89893, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - bgGame
+  - coin
+  - corazon
+  - p1_walk05
+  - p1_walk04
+  - p1_walk07
+  - p1_walk06
+  - p1_walk03
+  - p1_walk10
+  - p1_walk11
+  - p1_walk01
+  - p1_walk09
+  - p1_walk08
+  - p1_walk02
+  - p1_front
+  - grassHillRight2
+  - grassCenter
+  - grassHillRight
+  - lock_green
+  - grassCliffLeft
+  - liquidWater 1
+  - grassCliffRight
+  - grassMid
+  - grassCliffLeftAlt
+  - grassCliffRightAlt
+  - grassHillLeft
+  - lock_blue
+  - liquidWater
+  - boxItem
+  - grass
+  - boxExplosive
+  - lock_yellow
+  - boxAlt
+  - grassLeft
+  - grassRight
+  - grassHillLeft2
+  - grassCenter_rounded
+  - lock_red
+  - liquidWaterTop
+  - liquidWaterTop_mid 1
+  - liquidWaterTop 1
+  - liquidWaterTop_mid
+  - grassHalfRight
+  - grassHalfLeft
+  - grassHalf
+  - grassHalfMid
+  - grassLedgeRight
+  - grassLedgeLeft
+  m_Tag: AtlasJuego
+  m_IsVariant: 0
