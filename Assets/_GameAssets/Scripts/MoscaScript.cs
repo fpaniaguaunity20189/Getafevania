@@ -30,6 +30,6 @@ public class MoscaScript : MonoBehaviour {
         } else {
             transform.localScale = new Vector2(1, 1);
         }
-        
     }
+
 }
