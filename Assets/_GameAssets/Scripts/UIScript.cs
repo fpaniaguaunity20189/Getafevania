@@ -19,4 +19,17 @@ public class UIScript : MonoBehaviour {
         }
 	}
 
+    public void RestarVida() {
+        numeroVidas = ms.GetVidas();
+        for (int i = numeroVidas; i < imagenesVida.Length; i++) {
+            imagenesVida[i].color = new Color32(160, 160, 160, 128);
+        }
+        /*
+        for (int i = numeroVidas; i < imagenesVida.Length; i++) {
+            if (imagenesVida[i] != null) {
+                Destroy(imagenesVida[i].gameObject);
+            }
+        }
+        */
+    }
 }

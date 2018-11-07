@@ -19,6 +19,8 @@ public class MarcianoScript : MonoBehaviour {
     [SerializeField] int vidas;
     int saludMaxima = 100;
     [SerializeField] int salud;
+    [SerializeField] UIScript uiScript;
+
 
 
     [SerializeField] int puntos = 0;
@@ -40,6 +42,11 @@ public class MarcianoScript : MonoBehaviour {
 
         txtPuntuacion.text = "Score:" + puntos.ToString();
         txtSalud.text = "Health:" + salud.ToString();
+        //Recupera la posición del último checkpoint
+        Vector2 position = GameController.GetPosition();
+        if (position != Vector2.zero) {
+            this.transform.position = position;
+        }
     }
 
     private void Update() {
@@ -112,6 +119,7 @@ public class MarcianoScript : MonoBehaviour {
         salud = salud - danyo;
         if (salud <= 0) {
             vidas--;
+            uiScript.RestarVida();
             salud = saludMaxima;
         }
         if (estado == EstadoPlayer.AndandoDer) {
@@ -123,6 +131,27 @@ public class MarcianoScript : MonoBehaviour {
             new Vector2(fuerzaImpactoX, fuerzaImpactoY), ForceMode2D.Impulse);
             estado = EstadoPlayer.Sufriendo;
         }
+        txtSalud.text = "Health:" + salud.ToString();
+    }
+
+    public void RecibirSalud(int incrementoSalud) {
+        salud = salud + incrementoSalud;
+        
+        //Alternativa 1
+        salud = Mathf.Min(salud, saludMaxima);
+
+        /*
+        //Alternativa 2
+        if (salud>saludMaxima) {
+            salud = saludMaxima;
+        }
+        */
+
+        /*
+        //Alternativa 3
+        salud = (salud > saludMaxima) ? saludMaxima : salud;
+        */
+
         txtSalud.text = "Health:" + salud.ToString();
     }
 
